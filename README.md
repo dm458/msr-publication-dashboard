@@ -13,7 +13,5 @@ This dashboard provides an interface to explore and analyze publications from Mi
 ## Data
 Publication data is updated periodically from the Microsoft Research website.
 <<<<<<< HEAD
-Last updated: [Your last update date]
+Last updated: 7/11/2025
 =======
-Last updated: [Your last update date]
->>>>>>> 7f0d70e65b4eefaf52daa301fe8c304cd22bb293
