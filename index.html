@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Research Publications</title>
+    <link rel="stylesheet" href="./styles.css?v=20250710">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, private">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Clear-Site-Data" content="cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+</head>
+<body>
+    <header class="header">
+        <h1>Microsoft Research Publications</h1>
+    </header>
+    <div class="abstract-comparison">
+        <div class="comparison-content">
+            <div class="comparison-header">
+                <h2>Find Similar Publications</h2>
+                <p class="comparison-hint">Enter an abstract to discover related research</p>
+            </div>
+            <div class="comparison-container">
+                <div class="textarea-wrapper">
+                    <textarea id="compareAbstract" class="compare-abstract" 
+                        placeholder="Paste an abstract here..."></textarea>
+                </div>
+                <div class="comparison-buttons">
+                    <button id="compareButton" class="compare-btn">
+                        <span class="btn-text">Compare</span>
+                        <span class="btn-icon">→</span>
+                    </button>
+                    <button id="clearCompareButton" class="clear-compare-btn">Clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <aside class="filter-panel">
+            <div class="search-section">
+                <div class="search-group">
+                    <label for="titleSearch">Search by Title</label>
+                    <input type="text" id="titleSearch" class="search-input" placeholder="Enter title...">
+                </div>
+                <div class="search-group">
+                    <label for="authorSearch">Search by Author</label>
+                    <input type="text" id="authorSearch" class="search-input" placeholder="Enter author name...">
+                </div>
+            </div>
+            <div class="filter-header">
+                <h2>Research Areas</h2>
+                <p class="filter-hint">(Hold Ctrl/Cmd to select multiple)</p>
+            </div>
+            <div class="filter-dropdown">
+                <select id="researchAreasSelect" multiple size="10" class="research-areas-select">
+                    <!-- Options will be dynamically added here -->
+                </select>
+                <div class="filter-actions">
+                    <button id="clearFilters" class="clear-filters-btn">Clear All Filters</button>
+                </div>
+            </div>
+        </aside>
+        <main>
+            <div class="results-summary" id="resultsSummary"></div>
+            <div id="publications" class="publications-grid"></div>
+            <div class="pagination">
+                <button id="prevPage" class="pagination-btn">&laquo; Previous</button>
+                <span id="pageInfo" class="page-info">Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+                <button id="nextPage" class="pagination-btn">Next &raquo;</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js?v=20250710" defer></script>
+</body>
+</html>
